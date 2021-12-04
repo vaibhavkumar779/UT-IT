@@ -6,7 +6,7 @@ import org.mockito.MockitoSugar.{mock, when}
 import org.scalatest.funsuite.AnyFunSuite
 
 class CompanyImplTest extends AnyFunSuite {
-  val companyValidator = mock[CompanyValidator]
+  val companyValidator: CompanyValidator = mock[CompanyValidator]
   val knoldusCompany: Company = Company("Knoldus", "knoldus@gmail.com", "Noida")
 
   test("Company should be created"){
