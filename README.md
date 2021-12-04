@@ -23,3 +23,9 @@ Add the following validation in respective classes.
   * ii. Checks if email id is valid.
 * c) Email Validation Class : Checks if email is valid.
 
+Note:
+* Create 2 modules - one module for 1st and 2nd question and another module for 3rd question.
+* You have to create User related classes by yourself by taking reference from employee related classes.
+* You have to create Unit and Integration test cases for User, Company and Email only. No need to write them for Employee.
+* You have to create test cases for all the classes except the case classes in the model package.
+
