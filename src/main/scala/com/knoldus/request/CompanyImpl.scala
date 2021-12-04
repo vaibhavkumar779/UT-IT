@@ -6,7 +6,13 @@ import com.knoldus.validator.CompanyValidator
 class CompanyImpl(companyValidator: CompanyValidator) {
 
   def createCompany(company: Company): Option[String] = {
-    if (companyValidator.companyIsValid(company)) Option(company.name)
-    else None
+    if (companyValidator.companyIsValid(company)){
+      println("==>Comapany ='"+company.name+"' is created successfully!")
+      Option(company.name)
+    }
+    else{
+      println("==>Company ='"+company.name+"' cannot  be created")
+      None
+    }
   }
 }
